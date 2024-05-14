@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Digital Zone</title>
+  <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles/style.css">
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+
+<body>
+
+  <!-- HEADER: Begin -->
+  <header>
+    <div class="container">
+      <span class="logo">Digital Zone</span>
+    </div>
+  </header>
+  <!-- HEADER: End -->
+
+  <section class="hero">
+    <div class="textos-hero">
+      <h1>Renta, venta y reparación de copiadoras y equipos multifuncionales</h1>
+      <a href="#contacto">Contactanos</a>
+    </div>
+  </section>
+
+  <section class="info py-5">
+    <div class="container text-center">
+      <h2 class="titulo text-center">Ayudamos a tu empresa encontrando la solución más óptima.</h2>
+      <p>Somos especialistas en tecnologías de impresiones y multifunciones.</p>
+    </div>
+  </section>
+
+  <section class="objetiv-service">
+    <div class="service">
+      <h4>Te damos la mejor solución en impresiones</h4>
+      <ul>
+        <li>Refacciones.</li>
+        <li>Consumibles.</li>
+        <li>Capacitaciones.</li>
+        <li>Planes a corto y largo plazo.</li>
+        <li>Nos ajustamos a su volumen de impresión.</li>
+      </ul>
+
+      <div class="Telefono">
+        <nav class="navbar bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img src="assets/images/phone_in_talk.svg" alt="Logo" width="40" height="30" class="">
+              81-3626-4634
+            </a>
+
+          </div>
+        </nav>
+      </div>
+    </div>
+    <img class="imagen-service" src="assets/images/usando-xerox.jpg" alt="trabajador-impresora">
+  </section>
+
+
+  <section class="cardsSection">
+    <h2 class="titulo text-center text-white">Servicios</h2>
+    <div class="container cards-section">
+      <div class="card">
+        <img src="assets/images/impresora1.jpg" class="card-img-top" alt="...">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">Alquiler de equipos</h5>
+          <p class="card-text">Manejamos diferentes modelos multifuncionales acoplándonos a tus necesidades.</p>
+          <a href="#" class="btn btn-primary mt-auto mx-auto">Saber más</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="assets/images/impresora2.jpg" class="card-img-top" alt="...">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">Venta de equipos</h5>
+          <p class="card-text">Te asesoramos para la adquisición de los mejores equipos del mercado.</p>
+          <a href="#" class="btn btn-primary mt-auto mx-auto">Saber más</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="assets/images/Kyocera-M2040-promo.jpeg" class="card-img-top" alt="...">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">Mantenimiento</h5>
+          <p class="card-text">Brindamos servicio técnico personalizado.</p>
+          <a href="#" class="btn btn-primary mt-auto mx-auto">Saber más</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="marcas">
+    <div class="logos">
+      <img class="img1" src="assets/images/Brother-logo-th.png" alt="">
+      <img class="img2" src="assets/images/epson.png" alt="">
+      <img class="img3" src="assets/images/hp.png" alt="">
+      <img class="img4" src="assets/images/samsung.png" alt="">
+      <img class="img5" src="assets/images/marcas-_0001_kyocera-640w.png" alt="">
+      <img class="img6" src="assets/images/marcas-_0003_canon-640w.png" alt="">
+    </div>
+  </section>
+
+  <section class="web-site-formulario" id="contacto">
+    <div class="contenedor">
+      <h2 class="titulo">Contactenos</h2>
+      <form id="contact-form" action="phpmailer.php" method="post" enctype="multipart/form-data" class="form">
+        <input class="input" type="text" name="name" id="name" placeholder="Nombre" required>
+        <input class="input" type="email" name="email" id="email" placeholder="Email" required>
+        <input class="input" type="tel" name="telephone" id="telephone" placeholder="Teléfono" required>
+        <textarea class="input" name="message" id="message" placeholder="Mensaje" cols="30" rows="10"
+          required></textarea>
+        <div class="form-group d-flex justify-content-center">
+          <div class="g-recaptcha" data-sitekey="6LeDPtgpAAAAAPMMgdBSd7C9BcBAzz93LmHNEXD9"></div>
+        </div>
+        <input type="submit" class="btn btn-primary center-btn">
+      </form>
+    </div>
+
+  </section>
+  <!--whatsapp-->
+  <div class="btn-whatsapp">
+    <a href="https://api.whatsapp.com/send?phone=528113869526" target="_blank">
+      <img src="assets/images/whatsapp_logo_icon.svg" alt="whatsapp-logo">
+    </a>
+  </div>
+
+  <!-- SCRIPTS: Begin -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+  </script>
+  <script>
+    function onRecaptchaSuccess() {
+      document.getElementById('contact-form').submit();
+    }
+  </script>
+  <!-- SCRIPTS: End -->
+
+</body>
+
+
+</html>
