@@ -212,8 +212,12 @@
         }
         
         img {
-            width: 150px;
+            width: 120px;
             height: auto;
+            
+            @include media-breakpoint-up(xl) {
+                width: 150px;
+            }
 
             &.img3 {
                 width: 120px;
@@ -239,7 +243,6 @@
 
             @include media-breakpoint-up(xl) {
                 flex-direction: row;
-                margin-bottom: 0;
             }
         }
 
@@ -253,10 +256,6 @@
             border: 1px solid #bcc2ca;
             padding: 15px;
             display: inline-block;
-            
-            @include media-breakpoint-up(xl) {
-                margin-bottom: 30px;
-            }
             
             &::placeholder {
                 color: #555;

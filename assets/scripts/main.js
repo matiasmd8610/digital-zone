@@ -12,7 +12,7 @@ document.querySelector(".year-copy").innerText = new Date().getFullYear();
 /*Header anchor links
 *********************************************/
 $(document).ready(function(){
-    $('header li a[href^="#"]').on('click',function (e) {
+    $('header li a[href^="#"], .card-body a').on('click',function (e) {
         e.preventDefault();
         var target = this.hash,
         $target = $(target);
@@ -28,6 +28,15 @@ $(document).ready(function(){
         }, 500, 'swing');
     });
 }); 
+
+/*JS para que al clickear en nav items se cierre hamburguesa
+*****************************************************************************/
+const navLinks = document.querySelectorAll('.nav-item');
+const menuToggle = document.getElementById('navbarNav');
+const bsCollapse = new bootstrap.Collapse(menuToggle, {toggle:false});
+navLinks.forEach((l) => {
+    l.addEventListener('click', () => { bsCollapse.toggle() })
+});
 
 /*AOS
 *********************************************/

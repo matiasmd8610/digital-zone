@@ -12650,7 +12650,7 @@ a {
 
 section {
   padding: 3rem 0;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 @media (min-width: 1200px) {
   section {
@@ -12785,7 +12785,7 @@ header.sticky {
   }
 }
 header .logo {
-  width: 60px;
+  width: 65px;
   height: auto;
   transition: all 0.3s ease;
 }
@@ -12809,7 +12809,7 @@ header .navbar-toggler {
   border: 0;
   padding: 0;
   position: absolute;
-  top: 15px;
+  top: 20px;
   right: 0;
 }
 header .navbar-toggler:focus {
@@ -13089,8 +13089,13 @@ header .navbar .navbar-collapse .nav-item .nav-link:hover {
   }
 }
 .marcas .logos img {
-  width: 150px;
+  width: 120px;
   height: auto;
+}
+@media (min-width: 1200px) {
+  .marcas .logos img {
+    width: 150px;
+  }
 }
 .marcas .logos img.img3 {
   width: 120px;
@@ -13113,7 +13118,6 @@ header .navbar .navbar-collapse .nav-item .nav-link:hover {
 @media (min-width: 1200px) {
   .formulario .form-group {
     flex-direction: row;
-    margin-bottom: 0;
   }
 }
 .formulario .form .input,
@@ -13126,12 +13130,6 @@ header .navbar .navbar-collapse .nav-item .nav-link:hover {
   border: 1px solid #bcc2ca;
   padding: 15px;
   display: inline-block;
-}
-@media (min-width: 1200px) {
-  .formulario .form .input,
-  .formulario .form textarea {
-    margin-bottom: 30px;
-  }
 }
 .formulario .form .input::placeholder,
 .formulario .form textarea::placeholder {

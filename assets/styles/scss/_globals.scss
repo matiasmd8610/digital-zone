@@ -39,7 +39,7 @@ a {
 
 section {
     padding: 3rem 0;
-    overflow-x: hidden;
+    overflow: hidden;
     
     @include media-breakpoint-up(xl) {
         padding: 5rem 0;
