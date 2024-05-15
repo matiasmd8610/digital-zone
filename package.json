@@ -1,0 +1,28 @@
+{
+  "name": "digitalzone",
+  "version": "1.0.0",
+  "description": "Digital Zone - Renta, venta y reparación de copiadoras y equipos multifuncionales",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass-dev": "sass --watch --update --style=expanded assets/styles/scss:assets/styles/css",
+    "sass-prod": "sass --no-source-map --style=compressed assets/styles/scss:assets/styles/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matiasmd8610/digital-zone.git"
+  },
+  "author": "Matias Di Iorio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matiasmd8610/digital-zone/issues"
+  },
+  "homepage": "https://github.com/matiasmd8610/digital-zone#readme",
+  "devDependencies": {
+    "sass": "^1.57.1"
+  },
+  "dependencies": {
+    "aos": "^2.3.4",
+    "bootstrap": "^5.3.3"
+  }
+}

@@ -1,0 +1,125 @@
+html {
+    scroll-behavior: smooth;
+    font-size: 10px;
+}
+
+body {
+    font-family: $font-family-main;
+    font-size: 1.8rem;
+    line-height: 1.4;
+    color: $color-main;
+}
+
+a {
+    transition: all 0.3s ease;
+}
+
+.btn {
+    min-width: 220px;
+    color: $color-main !important;
+    border: none;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin: 1rem 0 0;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.2rem 1.6rem;
+    position: relative;
+    font-weight: 700;
+    border-radius: 2.5rem;
+    background-color: #ffcd0e;
+
+    &:hover {
+        background-color: #ffe065;
+    }
+}
+
+section {
+    padding: 3rem 0;
+    overflow-x: hidden;
+    
+    @include media-breakpoint-up(xl) {
+        padding: 5rem 0;
+    }
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.1;
+    letter-spacing: -.01em;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 3.8rem;
+    color: $color-white;
+
+    @include media-breakpoint-up(md) {
+        font-size: 5.2rem;
+    }
+}
+
+h2 {
+    font-size: 2.8rem;
+
+    @include media-breakpoint-up(md) {
+        font-size: 4.2rem;
+    }
+}
+
+h3 {
+    font-size: 2rem;
+
+    @include media-breakpoint-up(md) {
+        font-size: 2.5rem;
+    }
+}
+
+/*ANIMATIONS
+********************************************/
+@keyframes bounce-in-top {
+    0% {
+        transform: translateY(-500px);
+        animation-timing-function: ease-in;
+        opacity: 0;
+    }
+    38% {
+        transform: translateY(0);
+        animation-timing-function: ease-out;
+        opacity: 1;
+    }
+    55% {
+        transform: translateY(-65px);
+        animation-timing-function: ease-in;
+    }
+    72% {
+        transform: translateY(0);
+        animation-timing-function: ease-out;
+    }
+    81% {
+        transform: translateY(-28px);
+        animation-timing-function: ease-in;
+    }
+    90% {
+        transform: translateY(0);
+        animation-timing-function: ease-out;
+    }
+    95% {
+        transform: translateY(-8px);
+        animation-timing-function: ease-in;
+    }
+    100% {
+        transform: translateY(0);
+        animation-timing-function: ease-out;
+    }
+}

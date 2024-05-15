@@ -1,0 +1,292 @@
+.hero {
+    background-image: linear-gradient(120deg, rgba(82, 75, 168, 0.4) 0%, rgba(108, 111, 153, 0.692) 100%), url("../../../assets/images/mujer-trabajo-oficina-usando-impresora.jpg");
+    width: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+    
+    @include media-breakpoint-up(lg) {
+        height: calc(100vh - 115px);
+    }
+
+    .container {
+        height: 100%;
+    }
+
+    h1 {
+        margin-bottom: 2rem;
+        max-width: 1000px;
+        text-align: center;
+        font-weight: 800;
+    }
+}
+
+.textos-hero {
+    height: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    p {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+}
+
+
+.info {
+    .titulo {
+        margin-bottom: 2rem;
+        max-width: 900px;
+    }
+
+    p {
+        margin-left: 50px;
+        font-size: 2.2rem;
+    }
+}
+
+
+.objetiv-service {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0c0c0c;
+    flex-direction: column;
+
+    @include media-breakpoint-up(xl) {
+        flex-direction: row;
+    }
+
+    img {
+        height: auto;
+        object-fit: contain;
+        max-width: 100%;
+        
+        @include media-breakpoint-up(xl) {
+            max-width: 55%;
+            object-fit: cover;
+            height: 100%;
+        }
+    }
+    
+    .service {
+        display: flex;
+        flex-direction: column;
+        color: #bcc2ca;
+        
+        @include media-breakpoint-up(xl) {
+            width: 50%;
+        }
+        
+        ul {
+            list-style: square;
+            margin-left: 30px;
+            padding-left: 0;
+            
+            @include media-breakpoint-up(xl) {
+                margin-left: 16%;
+            }
+            
+            li {
+                margin: 0 0 .5rem 1rem;
+            }
+        }
+    
+        h2 {
+            margin: 40px 0;
+            padding: 0 15px;
+            text-align: center;
+            
+            @include media-breakpoint-up(xl) {
+                padding-left: 14%;
+                text-align: left;
+            }
+        }
+          
+        .telefono {
+            display: block;
+            position: relative;
+            bottom: 0;
+            left: 0;
+            margin: 30px 0 30px 15px;
+            background-color: $color-white;
+            padding: 1rem;
+            
+            @include media-breakpoint-up(xl) {
+                width: 100%;
+                margin: 80px 0 50px 15%;
+            }
+    
+            a {
+                font-size: 2rem;
+                color: $color-main;
+                text-decoration: none;
+
+                span {
+                    text-decoration: underline;
+                }
+            }
+        }
+    
+    }
+}
+
+.cardsSection {
+    background-image: linear-gradient(120deg, rgba(82, 75, 168, 0.699) 0%, rgba(108, 111, 153, 0.692) 100%);
+
+    h2 {
+        margin-bottom: 3rem;
+    }
+
+    .cards-section {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 15px;
+        
+        @include media-breakpoint-up(xl) {
+            gap: 30px;
+            flex-direction: row;
+        }
+
+    }
+
+    .card {
+        border-radius: 8px;
+        padding: 2rem;
+        
+        @include media-breakpoint-up(xl) {
+            width: 33.33%;
+        }
+
+        img {
+            height: 230px;
+            width: auto;
+            margin-bottom: 1.5rem;
+            
+            @include media-breakpoint-up(lg) {
+                height: 300px;
+            }
+        }
+    
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h3 {
+                margin-bottom: 1.6rem;
+            }
+        }
+    
+        .card-text {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+    }
+}
+
+
+.marcas {
+    display: flex;
+    width: 100%;
+    background-color: #fff;
+
+    .logos {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        gap: 4rem;
+        
+        @include media-breakpoint-up(xl) {
+            flex-direction: row;
+        }
+        
+        img {
+            width: 150px;
+            height: auto;
+
+            &.img3 {
+                width: 120px;
+            }
+        }
+    }
+}
+
+
+.formulario {
+    background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
+    color: #bcc2ca;
+
+    .form {
+        max-width: 1000px;
+        margin: 0 auto;
+
+        &-group {
+            display: flex;
+            gap: 2rem;
+            flex-direction: column;
+            margin-bottom: 2rem;
+
+            @include media-breakpoint-up(xl) {
+                flex-direction: row;
+                margin-bottom: 0;
+            }
+        }
+
+        .input,
+        textarea {
+            background: $color-white;
+            border: 0;
+            border-radius: 8px;
+            color: $color-main;
+            outline: none;
+            border: 1px solid #bcc2ca;
+            padding: 15px;
+            display: inline-block;
+            
+            @include media-breakpoint-up(xl) {
+                margin-bottom: 30px;
+            }
+            
+            &::placeholder {
+                color: #555;
+                opacity: 0.7;
+            }
+        }
+
+        input {
+            @include media-breakpoint-up(xl) {
+                width: 49%;
+            }
+        }
+
+        textarea {
+            width: 100%;
+            
+            @include media-breakpoint-up(lg) {
+                margin-bottom: 15px;
+            }
+        }
+
+        .center-btn {
+            width: 200px;
+            display: flex;
+            justify-content: center;
+            margin-top: auto;
+            padding: 12px 15px;
+        }
+        
+    }
+}
+
+
