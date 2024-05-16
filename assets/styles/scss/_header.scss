@@ -84,12 +84,6 @@ header {
 
         }
 
-        // &-toggler:focus {
-        //     text-decoration: none;
-        //     outline: 0;
-        //     box-shadow: 0 0 0 0;
-        // }
-
         &-nav {
             @include media-breakpoint-down(lg) {
                 padding: 2rem 0;
@@ -127,7 +121,7 @@ header {
                 }
 
                 .nav-link {
-                    font-size: 1.8rem;
+                    font-size: 2rem;
                     color: #333;
                     letter-spacing: -0.02em;
                     font-weight: 600;
@@ -135,6 +129,10 @@ header {
                     border-radius: 25px;
                     display: inline-block;
                     padding: 5px 20px;
+
+                    @include media-breakpoint-up(lg) {
+                        font-size: 1.8rem;
+                    }
 
                     &:hover {
                         background-color: $color-main;
